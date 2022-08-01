@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.1 (2022-08-01)
+### Fix
+* Semantic versioning ([`ce552e4`](https://github.com/GentikSolm/discord-wrap/commit/ce552e4ec67a2bf36a413555686d691cf7555906))
+
 ## v0.1.0 (2022-07-31)
 ### Feature
 * Rename publish branch to master ([`3ac27b0`](https://github.com/GentikSolm/discord-wrap/commit/3ac27b0721e8be5816d379774390aaedb5cf51b5))
