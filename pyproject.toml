@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "discord-wrap"
+version = "0.1.0"
+description = ""
+authors = ["josh <josh@mjbrowns.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+python-semantic-release = "^7.31.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+    "discord_wrap/__init__.py:__version__"
+]
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
+version_pattern = [
+    "README.md:rev: v{version}"
+]
+major_on_zero = false
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
+
