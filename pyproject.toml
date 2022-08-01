@@ -26,7 +26,7 @@ version_pattern = [
     "README.md:rev: v{version}"
 ]
 major_on_zero = false
-branch = "main"
+branch = "master"
 upload_to_pypi = true
 upload_to_release = true
 build_command = "pip install poetry && poetry build"
