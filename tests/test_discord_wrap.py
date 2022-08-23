@@ -1,4 +1,4 @@
-from discord_wrap import __version__
+from discordwrap import __version__
 
 
 def test_version():

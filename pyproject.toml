@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "discord-wrap"
+name = "discordwrap"
 version = "0.1.1"
 description = ""
 authors = ["josh <josh@mjbrowns.com>"]
@@ -17,7 +17,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.semantic_release]
 version_variable = [
-    "discord_wrap/__init__.py:__version__"
+    "discordwrap/__init__.py:__version__"
 ]
 version_toml = [
     "pyproject.toml:tool.poetry.version"
