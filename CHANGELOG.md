@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2022-08-23)
+### Feature
+* Add gitignore ([`133d5fc`](https://github.com/GentikSolm/discordwrap/commit/133d5fc056f63b7da32f98ab6be8ceb2e1f97900))
+* Rename to discordwrap ([`f5c23c1`](https://github.com/GentikSolm/discordwrap/commit/f5c23c15a3c77f743b117c363b6ccd9f9a38e00e))
+
 ## v0.1.1 (2022-08-01)
 ### Fix
 * Semantic versioning ([`ce552e4`](https://github.com/GentikSolm/discord-wrap/commit/ce552e4ec67a2bf36a413555686d691cf7555906))
