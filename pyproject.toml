@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "discordwrap"
-version = "0.2.0"
+version = "0.3.0"
 description = ""
-authors = ["josh <josh@mjbrowns.com>"]
+authors = ["josh <josh@brunuslabs.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -29,7 +29,7 @@ version_pattern = [
     "README.md:rev: v{version}"
 ]
 major_on_zero = false
-branch = "master"
+branch = "main"
 upload_to_pypi = true
 upload_to_release = true
 build_command = "pip install poetry && poetry build"
