@@ -6,4 +6,4 @@ def test_version():
 
 
 def test_hello():
-    assert hello() == "world"
+    assert hello() == "world!"
