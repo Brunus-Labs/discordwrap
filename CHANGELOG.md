@@ -2,6 +2,28 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2023-01-18)
+### Feature
+* Only run release on merged ([`f057d52`](https://github.com/Brunus-Labs/discordwrap/commit/f057d52bc843a6fced7c236d01d3b5524dc02de3))
+* Add test and linters for gh actions ([`5af835d`](https://github.com/Brunus-Labs/discordwrap/commit/5af835d4209450c37f35df061cfb9aa0d1081cad))
+* Add black checker to test ([`f8702c5`](https://github.com/Brunus-Labs/discordwrap/commit/f8702c58ef291b1a7fdab9fc70e3b88509e5a1ac))
+* Add black ([`e932260`](https://github.com/Brunus-Labs/discordwrap/commit/e932260a87661841e428074c9368bf99c193665c))
+* Add test function ([`bd25cab`](https://github.com/Brunus-Labs/discordwrap/commit/bd25cabf010cce2cec1fdcde4661fd70cf681a90))
+* Add test recipe ([`d4b638f`](https://github.com/Brunus-Labs/discordwrap/commit/d4b638fd98057c8204a574a7479a7120a4a25da6))
+* Update deps ([`bbe825a`](https://github.com/Brunus-Labs/discordwrap/commit/bbe825ade9090c7b6636b54347732da0e5dccf25))
+* Build before publish gh action ([`52f52d0`](https://github.com/Brunus-Labs/discordwrap/commit/52f52d0d1927e5101685d5c25f7d20133b918e1a))
+* Ignore __pycache__ ([`0cf630c`](https://github.com/Brunus-Labs/discordwrap/commit/0cf630c051bcadb8dedb9120e4a4fc21139d6bc7))
+* Update gh actions ([`5277721`](https://github.com/Brunus-Labs/discordwrap/commit/52777217476a09d649658f385054ef126adf245d))
+* Add justfile ([`f025191`](https://github.com/Brunus-Labs/discordwrap/commit/f0251913cfbcab8407f92d879b0142d5a317a40a))
+
+### Fix
+* Version ([`51d7b45`](https://github.com/Brunus-Labs/discordwrap/commit/51d7b4574bee56d47f3653a939aa03f997dfe317))
+* Branch and version numbers ([`321a3c8`](https://github.com/Brunus-Labs/discordwrap/commit/321a3c8b6980b7dc40f895ed18f9807126f361a8))
+* Gh ci action ([`ec7b697`](https://github.com/Brunus-Labs/discordwrap/commit/ec7b697f68c8ff952c3c8ee1b008d238267de54a))
+* Version test ([`744cca0`](https://github.com/Brunus-Labs/discordwrap/commit/744cca09083506c3d61d6c52baf9994e2e2b76c7))
+* Only build and install via poetry ([`803f47a`](https://github.com/Brunus-Labs/discordwrap/commit/803f47a7412f4a0afb240b2686abff287cb32370))
+* Remove build dir ([`f7c05f8`](https://github.com/Brunus-Labs/discordwrap/commit/f7c05f8a2b6c01cc64689abb61a68a64b1f44a23))
+
 ## v0.2.0 (2022-08-23)
 ### Feature
 * Add gitignore ([`133d5fc`](https://github.com/GentikSolm/discordwrap/commit/133d5fc056f63b7da32f98ab6be8ceb2e1f97900))
