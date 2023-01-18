@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2023-01-18)
+
+
 ## v0.2.0 (2022-08-23)
 ### Feature
 * Add gitignore ([`133d5fc`](https://github.com/GentikSolm/discordwrap/commit/133d5fc056f63b7da32f98ab6be8ceb2e1f97900))
