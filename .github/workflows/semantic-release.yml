@@ -9,6 +9,7 @@ on:
 
 jobs:
   release:
+    if: (github.actor != 'dependabot[bot]') && (contains(github.head_ref, 'dependabot/') == false)
     runs-on: ubuntu-latest
     concurrency: release
 
