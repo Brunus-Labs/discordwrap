@@ -24,7 +24,7 @@ jobs:
           python-version: "3.10"
 
       - name: Install Poetry
-        uses: Gr1N/setup-poetry@v7
+        uses: Gr1N/setup-poetry@v8
 
       - name: Cache poetry dependencies
         uses: actions/cache@v2
