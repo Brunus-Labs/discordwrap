@@ -1,5 +1,7 @@
-from discordwrap import __version__, hello
+from discordwrap import auth
+
+auth.TOKEN = "xxxxxxxxxxxx"
 
 
-def test_hello():
-    assert hello() == "world!"
+def test_token():
+    assert auth.TOKEN != None
