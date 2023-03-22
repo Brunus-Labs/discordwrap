@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# Pre-receive hook that will block commits with messges that do not follow regex rule
+# exit with a non zero exit code incase of an invalid commit message
+commitlint < "$1"
