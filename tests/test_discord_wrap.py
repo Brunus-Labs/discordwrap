@@ -2,14 +2,15 @@ from unittest import mock
 
 import pytest
 
-from discordwrap import Auth, errors, post
+from discordwrap import Auth, errors, send_message
 
 from .monkey import mock_request
 
 
 def test_TokenNotSet():
     with pytest.raises(errors.TokenNotSet):
-        post("")
+        message = "Hello world, from discordwrap!"
+        send_message(1065325022723440700, message)
 
 
 def test_token():
@@ -20,4 +21,8 @@ def test_token():
 
 @mock.patch("requests.post", side_effect=mock_request)
 def test_create_message(mock_request):
-    assert post("/404") == (None, 404)
+    message = "Hello world, from discordwrap!"
+    res = send_message(1065325022723440700, message)
+    assert res != None
+    assert res["type"] == 0
+    assert res["content"] == message
