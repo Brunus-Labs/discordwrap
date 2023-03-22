@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2023-03-22)
+### Feature
+* Add commitlint config and git hooks ([`8b9b9da`](https://github.com/Brunus-Labs/discordwrap/commit/8b9b9da7a590e9f006de0282c131443b52b267b5))
+* Add basic auth static class ([`5157884`](https://github.com/Brunus-Labs/discordwrap/commit/5157884cd22f99d3133242d634593ebd45fba60b))
+
 ## v0.3.0 (2023-01-18)
 ### Feature
 * Only run release on merged ([`f057d52`](https://github.com/Brunus-Labs/discordwrap/commit/f057d52bc843a6fced7c236d01d3b5524dc02de3))
