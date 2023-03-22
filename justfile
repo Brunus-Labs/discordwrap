@@ -13,3 +13,6 @@ format:
 test: build
     @poetry run black --check .
     @poetry run pytest
+
+get_payload: build
+    @poetry run python scripts/get_payload.py
