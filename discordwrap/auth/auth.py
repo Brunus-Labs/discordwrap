@@ -1,5 +1,5 @@
 from typing import Union
 
 
-class auth:
+class Auth:
     TOKEN: Union[str, None] = None

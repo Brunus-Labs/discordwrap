@@ -1,7 +1,14 @@
-from discordwrap import auth
+import pytest
 
-auth.TOKEN = "xxxxxxxxxxxx"
+from discordwrap import Auth, errors, post
+
+
+def test_TokenNotSet():
+    with pytest.raises(errors.TokenNotSet):
+        post("")
 
 
 def test_token():
-    assert auth.TOKEN != None
+    assert Auth.TOKEN == None
+    Auth.TOKEN = "xxxxxxxxxxxx"
+    assert Auth.TOKEN != None
