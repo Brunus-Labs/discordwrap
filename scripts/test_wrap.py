@@ -1,3 +1,4 @@
+import asyncio
 import json
 import os
 
@@ -7,8 +8,12 @@ import discordwrap as dw
 
 dotenv.load_dotenv()
 
-if __name__ == "__main__":
+
+def test_live():
     dw.Auth.TOKEN = os.getenv("DISC_TOKEN")
-    message = "Hello world, from discordwrap!"
-    res = dw.send_message(1065325022723440700, message)
-    print(json.dumps(res, indent=4))
+    for i in range(10):
+        dw.create_message(1065325022723440700, json={"content": f"Message {i}"})
+
+
+if __name__ == "__main__":
+    test_live()

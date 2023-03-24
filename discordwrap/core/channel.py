@@ -16,5 +16,8 @@ def create_message(channel_id, json: Union[None, dict] = None):
         raise InvlaidBody(
             "One of content, embeds, sticker_ids, or components must be set for a message"
         )
-    res = post(f"/channels/{channel_id}/messages", json=json)
+    res = post(
+        f"/channels/{channel_id}/messages", json=json, bucket=f"channel:{channel_id}"
+    )
+
     return res
