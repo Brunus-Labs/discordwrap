@@ -1,2 +1,0 @@
-class TokenNotSet(Exception):
-    pass

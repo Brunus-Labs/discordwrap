@@ -16,6 +16,5 @@ def mock_request(*args, **kwargs):
     if re.match(rf"{base_url}/channels/\d+/messages", args[0]):
         with open("tests/responses/new_message.json", "r") as file:
             res = json.load(file)
-            res["content"] = kwargs["json"]["content"]
         return MockResponse(res, 200)
     return MockResponse(None, 404)

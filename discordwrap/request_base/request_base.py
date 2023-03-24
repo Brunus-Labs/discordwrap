@@ -1,7 +1,7 @@
 import requests
 
+from discordwrap.Errors import TokenNotSet
 from discordwrap.auth import Auth
-from discordwrap.errors import TokenNotSet
 
 
 def post(endpoint, json=None):
