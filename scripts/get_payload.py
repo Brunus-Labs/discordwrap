@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 
 import dotenv
 
@@ -8,8 +9,15 @@ import discordwrap
 dotenv.load_dotenv()
 
 if __name__ == "__main__":
-    discordwrap.Auth.TOKEN = os.getenv("DISC_TOKEN")
-    res = discordwrap.post("/channels/1065325022723440700/messages")
+    TOKEN = os.getenv("DISC_TOKEN")
+    if TOKEN == None:
+        print("Token not found, please set your discord token")
+        sys.exit()
+
+    discordwrap.Auth.TOKEN = TOKEN
+    path = input("Request url: ")
+    method = input("Method: ")
+    res = discordwrap.post(path)
     print(res[1])
-    with open("payload.json", "w") as file:
-        file.write(json.dumps(res[0], indent=4))
+    with open(f"./tests/responses/{method}.json", "w") as file:
+        file.write(json.dumps(res[0], indent=2))
