@@ -130,13 +130,13 @@ def handle_rate_limit(func):
 
                     # the usual error cases
                     if res.status_code == 403:
-                        raise Forbidden(res, data)
+                        raise Forbidden(res, data, res.url)
                     elif res.status_code == 404:
-                        raise NotFound(res, data)
+                        raise NotFound(res, data, res.url)
                     elif res.status_code >= 500:
-                        raise DiscordServerError(res, data)
+                        raise DiscordServerError(res, data, res.url)
                     else:
-                        raise HTTPException(res, data)
+                        raise HTTPException(res, data, res.url)
                 # This is handling exceptions from the request
                 except OSError as e:
                     # Connection reset by peer
@@ -157,4 +157,16 @@ async def post(endpoint, json=None, bucket="_", **kwargs):
         "Content-Type": "application/json",
     }
     res = requests.post(base_url, headers=headers, json=json, **kwargs)
+    return res
+
+
+@syncwrap
+@handle_rate_limit
+async def get(endpoint, bucket="_", **kwargs):
+    base_url = f"https://discord.com/api/v10{endpoint}"
+    headers = {
+        "Authorization": f"Bot {Auth.TOKEN}",
+        "Content-Type": "application/json",
+    }
+    res = requests.get(base_url, headers=headers, **kwargs)
     return res

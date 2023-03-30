@@ -23,10 +23,14 @@ if __name__ == "__main__":
         sys.exit()
 
     discordwrap.Auth.TOKEN = TOKEN
-    path = input("Request Url: " + surround("\033[90m", "https://discord.com/api/v10"))
-    request_type = input("Request Method " + surround("\033[90m", "(POST)") + ": ")
-    method = input("Method Name: ").upper()
-    if method != "POST":
+    path = input(
+        "Request Url: " + surround("\033[90m", "https://discord.com/api/v10")
+    ).lower()
+    request_type = input(
+        "Request Method " + surround("\033[90m", "(POST)") + ": "
+    ).upper()
+    method = input("Method Name: ")
+    if method == "POST":
         input(
             "Make sure that the body json is in "
             + surround("\u001b[34m", "body.json")
@@ -42,8 +46,13 @@ if __name__ == "__main__":
         print("Requires method name")
         method = input("Method: ")
 
-    path = path.upper()
-    res = discordwrap.core.post(path)
+    res = {}
 
+    if request_type == "POST":
+        res = discordwrap.core.post(path)
+    if request_type == "GET":
+        res = discordwrap.core.get(path)
+
+    print(res)
     with open(f"./tests/responses/{method}.json", "w") as file:
         file.write(json.dumps(res, indent=2))
