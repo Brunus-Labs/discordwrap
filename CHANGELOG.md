@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.1 (2023-03-30)
+### Fix
+* Typing of core functions ([`387b1db`](https://github.com/Brunus-Labs/discordwrap/commit/387b1db8618461add768fc0fb0f9fa29ad6dd44e))
+
 ## v0.6.0 (2023-03-30)
 ### Feature
 * Add pr template ([`bb24c26`](https://github.com/Brunus-Labs/discordwrap/commit/bb24c2645254cbe29f83f7e3c9d2bff826400410))
