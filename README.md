@@ -3,6 +3,11 @@ A simple, intuitive wrapper around the underbelly of the discord API.
 This library is meant to be used with the discord docs. Responses from methods in the library will return
 JSON just as discords api details.
 
+# Installation
+```sh
+pip install discordwrap
+```
+
 ## Example
 ```py
 from discordwrap import Auth, channel
