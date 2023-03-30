@@ -2,6 +2,23 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.0 (2023-03-30)
+### Feature
+* Add get core method ([`5ade61f`](https://github.com/Brunus-Labs/discordwrap/commit/5ade61f2921e9b43476c7d32084b358b4ebca827))
+* Abstract out rate limit logic ([`0b1e00e`](https://github.com/Brunus-Labs/discordwrap/commit/0b1e00e2298b8aa2bdb04042a2588425d4beb099))
+* Rate limiting ([`092e864`](https://github.com/Brunus-Labs/discordwrap/commit/092e864e7182a0e34b5e6188f0535916f7c1ce1d))
+* Better errors and file structure ([`b2b4cf1`](https://github.com/Brunus-Labs/discordwrap/commit/b2b4cf1ce3ab13b93382f02dc4178ef1f62e2ded))
+* Add input options for response script ([`f956feb`](https://github.com/Brunus-Labs/discordwrap/commit/f956feb8b9c54118f83ee8c720727aca95fbbccc))
+* Add live testing file ([`2fd1937`](https://github.com/Brunus-Labs/discordwrap/commit/2fd19370087437a7d4155d90005a5e476a06b31b))
+* Add send_message ([`3ef8afd`](https://github.com/Brunus-Labs/discordwrap/commit/3ef8afd6678e1e21440217aa39c3daf6e23c7c25))
+* Add get_payload ([`4419c52`](https://github.com/Brunus-Labs/discordwrap/commit/4419c525c8fd63304f886a319cbb00b3920780f7))
+* Mock requests ([`ba06a4d`](https://github.com/Brunus-Labs/discordwrap/commit/ba06a4d43c1d907ff1f2cfdd767fd8213aa7abcc))
+* Add error for no token and base post request ([`f62196a`](https://github.com/Brunus-Labs/discordwrap/commit/f62196ae187a030e958dba2670de568ed8d304de))
+
+### Fix
+* Just test ([`d0879b2`](https://github.com/Brunus-Labs/discordwrap/commit/d0879b2b1c7bf729694f6faf53a0c3589137c12e))
+* Tests ([`e19a496`](https://github.com/Brunus-Labs/discordwrap/commit/e19a496745dd1a54ecc7f7aa28c71164aaeb135d))
+
 ## v0.4.0 (2023-03-22)
 ### Feature
 * Add commitlint config and git hooks ([`8b9b9da`](https://github.com/Brunus-Labs/discordwrap/commit/8b9b9da7a590e9f006de0282c131443b52b267b5))
