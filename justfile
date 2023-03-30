@@ -12,7 +12,7 @@ format:
 
 test: build
     @poetry run black --check .
-    @poetry run pytest -rFE
+    @poetry run pytest -rFE tests/
 
 get_payload: build
     @poetry run python scripts/get_payload.py

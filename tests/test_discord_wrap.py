@@ -7,19 +7,19 @@ from discordwrap import Auth, Errors, create_message
 from .monkey import mock_request
 
 
-def test_TokenNotSet():
+def test_token(token):
+    assert Auth.TOKEN != None
+
+
+@mock.patch("requests.post", side_effect=mock_request)
+def test_TokenNotSet(mock_request):
     with pytest.raises(Errors.TokenNotSet):
         message = "Hello world!"
         create_message(1065325022723440700, json={"content": message})
 
 
-def test_token():
-    assert Auth.TOKEN == None
-    Auth.TOKEN = "xxxxxxxxxxxx"
-    assert Auth.TOKEN != None
-
-
-def test_InvalidBody():
+@mock.patch("requests.post", side_effect=mock_request)
+def test_InvalidBody(mock_request, token):
     with pytest.raises(Errors.InvlaidBody):
         create_message(1065325022723440700, json=None)
     with pytest.raises(Errors.InvlaidBody):
@@ -27,7 +27,7 @@ def test_InvalidBody():
 
 
 @mock.patch("requests.post", side_effect=mock_request)
-def test_create_message(mock_request):
+def test_create_message(mock_request, token):
     message = "Hello world!"
     res = create_message(1065325022723440700, json={"content": message})
     assert res != None
