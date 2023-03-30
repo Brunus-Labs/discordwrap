@@ -1,6 +1,6 @@
 {
   "id": "1065325022723440700",
-  "last_message_id": "1090839760219672626",
+  "last_message_id": "1090849097092694158",
   "type": 0,
   "name": "discordwrap",
   "position": 12,
@@ -9,6 +9,12 @@
   "topic": null,
   "guild_id": "852591935938887721",
   "permission_overwrites": [
+    {
+      "id": "852591935938887721",
+      "type": 0,
+      "allow": "0",
+      "deny": "1049600"
+    },
     {
       "id": "971878461067112528",
       "type": 0,
@@ -20,15 +26,8 @@
       "type": 1,
       "allow": "1024",
       "deny": "0"
-    },
-    {
-      "id": "852591935938887721",
-      "type": 0,
-      "allow": "0",
-      "deny": "1049600"
     }
   ],
   "rate_limit_per_user": 0,
   "nsfw": false
 }
-

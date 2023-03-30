@@ -4,7 +4,7 @@ from discordwrap.Errors import InvlaidBody
 from discordwrap.core import post
 
 
-def create_message(channel_id, json: Union[None, dict] = None):
+def create_message(channel_id, json: Union[None, dict] = None) -> dict:
     if json == None:
         raise InvlaidBody("JSON Body is None")
     if (
@@ -20,4 +20,4 @@ def create_message(channel_id, json: Union[None, dict] = None):
         f"/channels/{channel_id}/messages", json=json, bucket=f"channel:{channel_id}"
     )
 
-    return res
+    return res.json()
