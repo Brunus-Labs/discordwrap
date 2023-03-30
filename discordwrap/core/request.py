@@ -1,7 +1,7 @@
 import asyncio
 import datetime
 from types import TracebackType
-from typing import Optional
+from typing import Optional, Union
 
 import requests
 
@@ -99,7 +99,7 @@ def handle_rate_limit(func):
 
                     # the request was successful so just return the text/json
                     if 300 > res.status_code >= 200:
-                        return data
+                        return res
 
                     # we are being rate limited
                     if res.status_code == 429:
