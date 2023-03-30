@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.0 (2023-03-30)
+### Feature
+* Add pr template ([`bb24c26`](https://github.com/Brunus-Labs/discordwrap/commit/bb24c2645254cbe29f83f7e3c9d2bff826400410))
+* Add install ([`f805bab`](https://github.com/Brunus-Labs/discordwrap/commit/f805babb3da9cc905ee3cbf3661c22865126383d))
+* Update readme ([`b6c5688`](https://github.com/Brunus-Labs/discordwrap/commit/b6c5688251c5a4f0aa197326e491654277c55cfc))
+* Initial readme ([`2f20f01`](https://github.com/Brunus-Labs/discordwrap/commit/2f20f016cc34dc8a28c707b869d6569fa9de4ed3))
+
 ## v0.5.0 (2023-03-30)
 ### Feature
 * Add get core method ([`5ade61f`](https://github.com/Brunus-Labs/discordwrap/commit/5ade61f2921e9b43476c7d32084b358b4ebca827))
