@@ -75,7 +75,7 @@ def handle_rate_limit(func):
         with MaybeUnlock(lock) as maybe_lock:
             for tries in range(5):
                 try:
-                    res = await func(*args, **kwargs)
+                    res = func(*args, **kwargs)
 
                     is_global = bool(res.headers.get("X-RateLimit-Global", False))
                     remaining = res.headers.get("X-Ratelimit-Remaining", "")
@@ -150,7 +150,7 @@ def handle_rate_limit(func):
 
 @syncwrap
 @handle_rate_limit
-async def post(endpoint, json=None, bucket="_", **kwargs):
+def post(endpoint, json=None, bucket="_", **kwargs):
     base_url = f"https://discord.com/api/v10{endpoint}"
     headers = {
         "Authorization": f"Bot {Auth.TOKEN}",
@@ -162,7 +162,7 @@ async def post(endpoint, json=None, bucket="_", **kwargs):
 
 @syncwrap
 @handle_rate_limit
-async def get(endpoint, bucket="_", **kwargs):
+def get(endpoint, bucket="_", **kwargs):
     base_url = f"https://discord.com/api/v10{endpoint}"
     headers = {
         "Authorization": f"Bot {Auth.TOKEN}",
