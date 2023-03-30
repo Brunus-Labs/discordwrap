@@ -1,7 +1,7 @@
 from typing import Union
 
 from discordwrap.Errors import InvlaidBody
-from discordwrap.request_base import post
+from discordwrap.core import post
 
 
 def create_message(channel_id, json: Union[None, dict] = None):

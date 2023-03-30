@@ -17,7 +17,7 @@ if __name__ == "__main__":
     discordwrap.Auth.TOKEN = TOKEN
     path = input("Request url: ")
     method = input("Method: ")
-    res = discordwrap.post(path)
+    res = discordwrap.core.post(path)
     print(res[1])
     with open(f"./tests/responses/{method}.json", "w") as file:
         file.write(json.dumps(res[0], indent=2))
