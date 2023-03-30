@@ -1,0 +1,30 @@
+{
+  "id": "1087955643807301692",
+  "type": 0,
+  "content": "Hello world!",
+  "channel_id": "1065325022723440700",
+  "author": {
+    "id": "1087936238700470272",
+    "username": "wrap",
+    "global_name": null,
+    "display_name": null,
+    "avatar": null,
+    "avatar_decoration": null,
+    "discriminator": "4742",
+    "public_flags": 0,
+    "bot": true
+  },
+  "attachments": [],
+  "embeds": [],
+  "mentions": [],
+  "mention_roles": [],
+  "pinned": false,
+  "mention_everyone": false,
+  "tts": false,
+  "timestamp": "2023-03-22T04:27:18.722000+00:00",
+  "edited_timestamp": null,
+  "flags": 0,
+  "components": [],
+  "referenced_message": null
+}
+

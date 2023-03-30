@@ -1,3 +1,5 @@
 .env
 dist
 __pycache__
+payload.json
+scripts/test_wrap.py

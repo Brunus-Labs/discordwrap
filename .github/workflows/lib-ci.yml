@@ -47,5 +47,8 @@ jobs:
 
       - name: test lib
         run: |
+          # We dont actually need a token to test the lib
+          touch .env
+          echo "DISC_TOKEN=XXXXX" > .env
           just test
 
