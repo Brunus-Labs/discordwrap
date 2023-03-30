@@ -1,3 +1,3 @@
 #!/bin/sh
 # We use this to automatically satisfy the newline warning for commit bodys
-printf "\n$(cat $1)" > $1
+printf '\n%s' "$(cat $1)" > $1

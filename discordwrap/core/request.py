@@ -5,8 +5,8 @@ from typing import Optional
 
 import requests
 
+from discordwrap.Auth import Auth
 from discordwrap.Errors import *
-from discordwrap.auth import Auth
 
 
 class Locks(object):
