@@ -8,8 +8,6 @@ import requests
 from discordwrap.Errors import *
 from discordwrap.auth import Auth
 
-# Thanks to nextcord source code for guiding me through this.
-
 
 class Locks(object):
     # Singleton lock Object
