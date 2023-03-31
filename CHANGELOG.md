@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.2 (2023-03-31)
+### Fix
+* Get_event_loop to make new event loop ([`e1f8dbd`](https://github.com/Brunus-Labs/discordwrap/commit/e1f8dbd278bb081f6fc5feb5cb411962d0adc749))
+
 ## v0.6.1 (2023-03-30)
 ### Fix
 * Typing of core functions ([`387b1db`](https://github.com/Brunus-Labs/discordwrap/commit/387b1db8618461add768fc0fb0f9fa29ad6dd44e))
