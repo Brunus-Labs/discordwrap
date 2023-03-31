@@ -15,7 +15,8 @@ class Locks(object):
         if not hasattr(cls, "instance"):
             cls.instance = super(Locks, cls).__new__(cls)
             cls._locks = {}
-            cls._loop = asyncio.get_event_loop()
+            cls._loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(cls._loop)
             cls._global_over = asyncio.Event()
             cls._global_over.set()
         return cls.instance
