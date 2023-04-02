@@ -8,7 +8,7 @@ on:
 
 jobs:
   release:
-    if: (github.actor != 'dependabot[bot]') && (contains(github.head_ref, 'dependabot/') == false) && (github.event.pull_request.merged == true)
+    if: (github.actor != 'dependabot[bot]') && (contains(github.head_ref, 'dependabot/') == false) && (github.event.pull_request.merged == true) && (contains(github.head_ref, 'skip-release/') == false)
     runs-on: ubuntu-latest
     concurrency: release
 
