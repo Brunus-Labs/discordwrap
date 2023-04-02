@@ -36,7 +36,7 @@ Rate limiting blocks only when needed, and makes sure to only keep one thread al
 Auth token is set.
 
 This library does NOT (yet) implement the discord gateway, as there are plenty of other libraries that are much better for bot building.
-This library is targeted at developers that are not building an interactive but, but need the ability to use the discord api in another project.
+This library is targeted at developers that are not building an interactive bot, but need the ability to use the discord api in another project.
 
 ## Use cases
 
