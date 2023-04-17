@@ -12,8 +12,6 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-url='https://github.com/Brunus-Labs/discordwrap'
-license='MIT'
 
 [project.urls]
 "Homepage" = "https://discordwrap.brunuslabs.com/"
