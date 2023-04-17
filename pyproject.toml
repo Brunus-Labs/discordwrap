@@ -4,6 +4,11 @@ version = "0.7.0"
 description = "A simple, intuitive wrapper around the underbelly of the discord API. This library is meant to be used with the discord docs. Responses from methods in the library will return JSON just as discords api details."
 authors = ["josh <josh@brunuslabs.com>"]
 readme = "README.md"
+license = 'MIT'
+homepage = "https://discordwrap.brunuslabs.com/"
+documentation = "https://discordwrap.brunuslabs.com/"
+repository = "https://github.com/Brunus-Labs/discordwrap"
+keywords = ['Discord', "API", "Lightweight", "AsyncIO"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
@@ -12,12 +17,6 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-
-[project.urls]
-"Homepage" = "https://discordwrap.brunuslabs.com/"
-"Bug Tracker" = "https://github.com/Brunus-Labs/discordwrap/issues"
-"Github" = "https://github.com/Brunus-Labs/discordwrap"
-"Changelog" = "https://github.com/Brunus-Labs/discordwrap/blob/main/CHANGELOG.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
