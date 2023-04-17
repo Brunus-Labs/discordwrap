@@ -1,8 +1,25 @@
 [tool.poetry]
 name = "discordwrap"
 version = "0.7.0"
-description = ""
+description = "A simple, intuitive wrapper around the underbelly of the discord API. This library is meant to be used with the discord docs. Responses from methods in the library will return JSON just as discords api details."
 authors = ["josh <josh@brunuslabs.com>"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Framework :: AsyncIO",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+url='https://github.com/Brunus-Labs/discordwrap'
+license='MIT'
+
+[project.urls]
+"Homepage" = "https://discordwrap.brunuslabs.com/"
+"Bug Tracker" = "https://github.com/Brunus-Labs/discordwrap/issues"
+"Github" = "https://github.com/Brunus-Labs/discordwrap"
+"Changelog" = "https://github.com/Brunus-Labs/discordwrap/blob/main/CHANGELOG.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
