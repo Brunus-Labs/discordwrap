@@ -24,7 +24,7 @@ channel.create_message(channel, json={
 
 ## Docs
 
-Find offical docs [here](discordwrap.brunuslabs.com)!
+Find offical docs [here](https://discordwrap.brunuslabs.com)!
 
 ## Motivation
 Using any API can be daunting. Using a library with poor documentation can be even worse. 
