@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.7.0 (2023-04-17)
+### Feature
+* Add link to docs ([`81e7991`](https://github.com/Brunus-Labs/discordwrap/commit/81e7991bd0e593eb567fcb4c6c5834800b8d585d))
+* Add skip release to releaser ([`0df523b`](https://github.com/Brunus-Labs/discordwrap/commit/0df523b3e681faaf7c78a2f87201a4311f1f4e51))
+
+### Fix
+* Readme ([`73058d9`](https://github.com/Brunus-Labs/discordwrap/commit/73058d9c5ce54d5bb729206c39a5396c6ba7dd22))
+
 ## v0.6.2 (2023-03-31)
 ### Fix
 * Get_event_loop to make new event loop ([`e1f8dbd`](https://github.com/Brunus-Labs/discordwrap/commit/e1f8dbd278bb081f6fc5feb5cb411962d0adc749))
