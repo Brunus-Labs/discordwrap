@@ -22,6 +22,10 @@ channel.create_message(channel, json={
 })
 ```
 
+## Docs
+
+Find offical docs [here](discordwrap.brunuslabs.com)!
+
 ## Motivation
 Using any API can be daunting. Using a library with poor documentation can be even worse. 
 The goal of this library is to not need any documentation, other than discords.
