@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "discordwrap"
-version = "0.7.0"
+version = "0.8.0"
 description = "A simple, intuitive wrapper around the underbelly of the discord API. This library is meant to be used with the discord docs. Responses from methods in the library will return JSON just as discords api details."
 authors = ["josh <josh@brunuslabs.com>"]
 readme = "README.md"

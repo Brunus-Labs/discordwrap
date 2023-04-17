@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v0.8.0 (2023-04-17)
+### Feature
+* Add metadata ([`99bd45e`](https://github.com/Brunus-Labs/discordwrap/commit/99bd45e1d3c919c1e6add4aeedbd5b4e34cde724))
+* Update readme ([`835d90a`](https://github.com/Brunus-Labs/discordwrap/commit/835d90a99aed1e1e9e8fa8af62a3ae5c1073a5e6))
+
+### Fix
+* Use poetry standard ([`58438c1`](https://github.com/Brunus-Labs/discordwrap/commit/58438c1c1b172b31585a57d2939e49f4945eb5a0))
+* Metadata bad keys ([`c80781b`](https://github.com/Brunus-Labs/discordwrap/commit/c80781b002845892851874d8cbf10ca51a62d6ae))
+
 ## v0.7.0 (2023-04-17)
 ### Feature
 * Add link to docs ([`81e7991`](https://github.com/Brunus-Labs/discordwrap/commit/81e7991bd0e593eb567fcb4c6c5834800b8d585d))
