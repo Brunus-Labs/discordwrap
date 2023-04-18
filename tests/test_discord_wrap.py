@@ -33,3 +33,11 @@ def test_create_message(mock_request, token):
     assert res != None
     assert res["type"] == 0
     assert res["content"] == message
+
+
+@mock.patch("requests.get", side_effect=mock_request)
+def test_get_channel(mock_request, token):
+    res = channel.get_channel(1065325022723440700)
+    assert res != None
+    assert res["type"] == 0
+    assert res["name"] == "discordwrap"

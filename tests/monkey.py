@@ -16,8 +16,15 @@ def mock_request(*args, **kwargs):
             return self.text
 
     base_url = f"https://discord.com/api/v10"
+    text = None
+
     if re.match(rf"{base_url}/channels/\d+/messages", args[0]):
         with open("tests/responses/new_message.json", "r") as file:
             text = json.load(file)
         return MockResponse(text)
+    if re.match(rf"{base_url}/channels/\d+", args[0]):
+        with open("tests/responses/get_channel.json", "r") as file:
+            text = json.load(file)
+        return MockResponse(text)
+
     return MockResponse("", headers={}, status_code=404)

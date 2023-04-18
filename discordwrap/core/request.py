@@ -1,7 +1,7 @@
 import asyncio
 import datetime
 from types import TracebackType
-from typing import Optional, Union
+from typing import Optional
 
 import requests
 
