@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.9.0 (2023-04-18)
+### Feature
+* Get_channel ([`d7113e4`](https://github.com/Brunus-Labs/discordwrap/commit/d7113e4fa2307ace5a3a808091aab9ed1efc7644))
+
+### Fix
+* Tests to grab monkeypatch ([`327d182`](https://github.com/Brunus-Labs/discordwrap/commit/327d182897e10a03686bbe06772b14b2c7de1f4b))
+* Test to use monkeypatch ([`4c00480`](https://github.com/Brunus-Labs/discordwrap/commit/4c00480a6469e2ff0188ad9ae316784c836d7e1a))
+
 ## v0.8.0 (2023-04-17)
 ### Feature
 * Add metadata ([`99bd45e`](https://github.com/Brunus-Labs/discordwrap/commit/99bd45e1d3c919c1e6add4aeedbd5b4e34cde724))
